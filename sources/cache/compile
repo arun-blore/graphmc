@@ -1,0 +1,19 @@
+#!/bin/sh
+g++ -std=c++11 -I../HMC \
+cache.cpp \
+../HMC/BankState.o \
+../HMC/CasHMCWrapper.o \
+../HMC/CommandQueue.o \
+../HMC/ConfigReader.o \
+../HMC/CrossbarSwitch.o \
+../HMC/DRAMCommand.o \
+../HMC/DRAM.o \
+../HMC/HMCController.o \
+../HMC/HMC.o \
+../HMC/LinkMaster.o \
+../HMC/Link.o \
+../HMC/LinkSlave.o \
+../HMC/Packet.o \
+../HMC/Transaction.o \
+../HMC/VaultController.o \
+./utils.o
